@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback and Evaluation System</title>
+    <style>
+        /* Global Styles */
+        html, body {
+            height: 100%; /* Ensure the body takes up the full height of the viewport */
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* Content Wrapper */
+        .content-wrapper {
+            flex: 1; /* Ensures this section takes up available space to push the footer down */
+        }
+
+        body {
+            background: url('https://t3.ftcdn.net/jpg/03/02/04/06/360_F_302040655_IEH9RyDlu7LL8YCLjgL1IskhrpOlmlSv.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navbar a.logo {
+            color: white;
+            font-size: 1.8rem;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navbar ul li {
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #0056b3; /* Hover effect */
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            text-align: center;
+            margin-top: 100px;
+            color: white;
+        }
+
+        .main-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .main-content p {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .navbar a.logo {
+                font-size: 1.5rem;
+            }
+
+            .main-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .main-content p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Smart Feedback System</a>
+        <ul>
+            <li><a href="student_details.html">Student Details</a></li>
+            <li><a href="faculty_details.html">Faculty Details</a></li>
+            <li><a href="course_details.html">Course Details</a></li>
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="login.html">Login</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="content-wrapper">
+        <section class="main-content">
+            <h1>Welcome to the Student Feedback and Evaluation System</h1>
+            <p>This system allows students to provide feedback for courses and faculty.</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 All rights reserved</p>
+    </footer>
+</body>
+</html>

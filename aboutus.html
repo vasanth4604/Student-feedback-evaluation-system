@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Global Styles */
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://t3.ftcdn.net/jpg/03/02/04/06/360_F_302040655_IEH9RyDlu7LL8YCLjgL1IskhrpOlmlSv.jpg') no-repeat center center fixed; /* Background image */
+            background-size: cover;
+            height: 100vh; /* Use full viewport height */
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 1.5rem 1rem; /* Increased padding for more height */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a.logo-title {
+            color: white;
+            font-size: 1.8rem;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-left: 20px; /* Space before heading */
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            margin-right: 20px; /* Added margin to the right */
+        }
+
+        .navbar ul li {
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #0056b3; /* Hover effect */
+        }
+
+        /* About Us Styles */
+        .about-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: auto; /* Center horizontally */
+            margin-top: 200px; /* Adjusted margin-top to move down */
+            text-align: left; /* Align text to the left */
+        }
+
+        .about-container h2 {
+            text-align: center; /* Center header */
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-title">Student Feedback and Evaluation System</a>
+        <ul>
+            <!-- <li><a href="student_details.html">Student Details</a></li>
+            <li><a href="faculty_details.html">Faculty Details</a></li>
+            <li><a href="course_details.html">Course Details</a></li>
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="login.html">Login</a></li> -->
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="index.html" class="signout-button">Sign Out</a></li> <!-- Sign Out Button -->
+        </ul>
+    </nav>
+
+    <!-- About Us Section -->
+    <div class="about-container">
+        <h2>About Us</h2>
+        <p>
+            Welcome to the Student Feedback and Evaluation System. Our platform is dedicated to enhancing the educational experience by collecting and analyzing feedback from students regarding their courses, faculty, and overall academic journey. 
+        </p>
+        <p>
+            We believe that every student's voice matters, and we strive to create an environment where feedback is valued and utilized to improve the quality of education.
+        </p>
+        <p>
+            Our mission is to empower students to share their thoughts and suggestions, thereby fostering a culture of continuous improvement in our educational institutions.
+        </p>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 All rights reserved</p>
+    </footer>
+</body>
+</html>
